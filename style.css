@@ -1,0 +1,105 @@
+
+/*
+#entorno {
+	display: block;
+	margin: 0 auto;
+}
+
+#fondo {
+	opacity: 0.3;
+} */
+
+ body {
+            font-family: Arial, Verdana, sans-serif;
+        }
+
+        #piezas {
+            display: flex;
+            flex-wrap: wrap;
+            width: 48vw;
+            height: 60vh;
+            margin: auto;
+            justify-content: center;
+            position: absolute;
+            right: 3vw;
+            top: 37vh;
+        }
+
+        #puzzle {
+            border: 1px solid black;
+            width: 42vw;
+            height: 93vh;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 3vh 0 0 3vw;
+            padding: 0 0 0 0.5vw;
+        }
+
+        .pieza {
+            max-width: 7vw;
+            max-height: 23vh;
+            min-width: 6vw;
+            min-height: 8vh;
+            width: auto;
+            height: auto;
+            margin: 0.3em;
+            background-size: 100% 100%;
+            
+        }
+
+        .placeholder {
+            background-color: #F2F2F2;
+            outline: 1px solid #333;
+            width: 7vw;
+            height: 23vh;
+            transition: 1s;
+            
+        }
+
+        .placeholder.hover {
+            background-color: orange;
+        }
+
+        .placeholder .pieza {
+            margin: 0;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        #mensaje {
+            color: black;
+            text-align: center;
+            display: none;
+        }
+
+        .ganaste {
+            background-color: #B3D67C;
+        }
+
+        .ganaste #mensaje {
+            display: block;
+        }
+
+        .ganaste .placeholder {
+            outline: none;
+        }
+
+        .ganaste #piezas {
+            display: none;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100vw;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+        .planet1{
+           
+            height: 30vh;
+            right: 20vw;
+            position:absolute;
+            top: 4vh;
+        }

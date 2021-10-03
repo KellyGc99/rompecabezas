@@ -1,8 +1,8 @@
 const imagenes = [
-    'imagen-0', 'imagen-1', 'imagen-2', 'imagen-3', 'imagen-4', 'imagen-5',
-    'imagen-6', 'imagen-7', 'imagen-8', 'imagen-9', 'imagen-10', 'imagen-11',
-    'imagen-12', 'imagen-13', 'imagen-14', 'imagen-15', 'imagen-16', 'imagen-17',
-    'imagen-18', 'imagen-19', 'imagen-20', 'imagen-21', 'imagen-22', 'imagen-23' 
+    'jupiter-0', 'jupiter-1', 'jupiter-2', 'jupiter-3', 'jupiter-4', 'imagen-5',
+    'jupiter-6', 'jupiter-7', 'jupiter-8', 'jupiter-9', 'jupiter-10', 'imagen-11',
+    'jupiter-12', 'jupiter-13', 'jupiter-14', 'jupiter-15', 'jupiter-16', 'jupiter-17',
+    'jupiter-18', 'jupiter-19', 'jupiter-20', 'jupiter-21', 'jupiter-22', 'jupiter-23'
 ];
 
 const puzzle = document.getElementById('puzzle');

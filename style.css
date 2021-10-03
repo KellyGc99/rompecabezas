@@ -13,7 +13,7 @@
             font-family: Arial, Verdana, sans-serif;
         }
 
-        #piezas {
+        #piezas3 {
             display: flex;
             flex-wrap: wrap;
             width: 48vw;
@@ -25,7 +25,7 @@
             top: 37vh;
         }
 
-        #puzzle {
+        #puzzle3 {
             border: 1px solid black;
             width: 42vw;
             height: 93vh;

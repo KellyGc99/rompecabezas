@@ -1,32 +1,31 @@
 const imagenes3 = [
-    'imagen-0', 'imagen-1', 'imagen-2', 'imagen-3', 'imagen-4', 'imagen-5',
-    'imagen-6', 'imagen-7', 'imagen-8', 'imagen-9', 'imagen-10', 'imagen-11',
-    'imagen-12', 'imagen-13', 'imagen-14', 'imagen-15', 'imagen-16', 'imagen-17',
-    'imagen-18', 'imagen-19', 'imagen-20', 'imagen-21', 'imagen-22', 'imagen-23'
+    'europa-0', 'europa-1', 'europa-2', 'europa-3', 
+    'europa-4', 'europa-5', 'europa-6', 'europa-7',
+    'europa-8', 'europa-9', 'europa-10', 'europa-11'
 ];
 
-const puzzle3 = document.getElementById('puzzle');
-const piezas3 = document.getElementById('piezas');
+const puzzle3 = document.getElementById('puzzle3');
+const piezas3 = document.getElementById('piezas3');
 const mensaje3 = document.getElementById('mensaje');
 
-let terminado3 = imagenes.length;
+let terminado3 = imagenes3.length;
 
-while (imagenes.length) {
-    const index3 = Math.floor(Math.random() * imagenes.length);
+while (imagenes3.length) {
+    const index3 = Math.floor(Math.random() * imagenes3.length);
     const div3 = document.createElement('div');
     div3.className = 'pieza';
-    div3.id = imagenes[index3];
+    div3.id = imagenes3[index3];
     div3.draggable = true;
-    div3.style.backgroundImage = `url("recursos/${imagenes[index3]}.png")`;
+    div3.style.backgroundImage = `url("recursos/${imagenes3[index3]}.png")`;
     piezas3.appendChild(div3);
-    imagenes.splice(index3, 1);
+    imagenes3.splice(index3, 1);
 }
 
-for (let i = 0; i < terminado; i++) {
+for (let i = 0; i < terminado3; i++) {
     const div3 = document.createElement('div');
     div3.className = 'placeholder';
     div3.dataset.id = i;
-    puzzle3.appendChild(div);
+    puzzle3.appendChild(div3);
 }
 
 
@@ -52,9 +51,9 @@ puzzle3.addEventListener('drop', e => {
     if (e.target.dataset.id === numero3) {
         e.target.appendChild(document.getElementById(id));
 
-        terminado--;
+        terminado3--;
 
-        if (terminado === 0) {
+        if (terminado3 === 0) {
             document.body.classList.add('ganaste');
         }
     }

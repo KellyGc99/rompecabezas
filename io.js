@@ -7,19 +7,19 @@ const imagenes2 = [
 
 const puzzle2 = document.getElementById('puzzle2');
 const piezas2 = document.getElementById('piezas2');
-const mensaje2 = document.getElementById('mensaje2');
+const mensaje = document.getElementById('mensaje');
 
-let terminado = imagenes.length;
+let terminado = imagenes2.length;
 
-while (imagenes.length) {
-    const index2 = Math.floor(Math.random() * imagenes.length);
+while (imagenes2.length) {
+    const index2 = Math.floor(Math.random() * imagenes2.length);
     const div2 = document.createElement('div');
     div2.className = 'pieza';
-    div2.id = imagenes[index2];
+    div2.id = imagenes2[index2];
     div2.draggable = true;
-    div2.style.backgroundImage = `url("recursos/${imagenes[index]}.png")`;
-    piezas.appendChild(div2);
-    imagenes.splice(index2, 1);
+    div2.style.backgroundImage = `url("recursos/${imagenes2[index2]}.png")`;
+    piezas2.appendChild(div2);
+    imagenes2.splice(index2, 1);
 }
 
 for (let i = 0; i < terminado; i++) {

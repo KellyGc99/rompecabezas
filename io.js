@@ -1,8 +1,8 @@
 const imagenes2 = [
-    'imagen-0', 'imagen-1', 'imagen-2', 'imagen-3', 'imagen-4', 'imagen-5',
-    'imagen-6', 'imagen-7', 'imagen-8', 'imagen-9', 'imagen-10', 'imagen-11',
-    'imagen-12', 'imagen-13', 'imagen-14', 'imagen-15', 'imagen-16', 'imagen-17',
-    'imagen-18', 'imagen-19', 'imagen-20', 'imagen-21', 'imagen-22', 'imagen-23' 
+    'io-0', 'io-1', 'io-2', 'io-3', 
+    'io-4', 'io-5', 'io-6', 'io-7', 
+    'io-8', 'io-9', 'io-10', 'io-11',
+    'io-12', 'io-13', 'io-14', 'io-15' 
 ];
 
 const puzzle2 = document.getElementById('puzzle2');
